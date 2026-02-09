@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NovaWearStore</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { margin: 0; font-family: Arial, sans-serif; background: #f2f2f2; }
+        header { background: #111; color: white; padding: 25px; text-align: center; }
+        .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; padding: 20px; }
+        .product { background: white; padding: 15px; border-radius: 10px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .product img { width: 200px; height: auto; border-radius: 10px; }
+        input, textarea { width: 90%; padding: 8px; margin: 5px 0; border-radius: 5px; border: 1px solid #ccc; }
+        input[type=submit] { background: black; color: white; border: none; cursor: pointer; }
+        input[type=submit]:hover { background: #444; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>NovaWearStore</h1>
+    <p>Egyedi termékek – Banki átutalással fizetve</p>
+</header>
+
+<div class="products">
+
+    <!-- Termék 1 -->
+    <div class="product">
+        <img src="image1.png" alt="Supreme Hooded Zip-Up Leopard SS25">
+        <h3>Supreme White Half-Zip Leopard</h3>
+        <p>A stylish and bold zip-up hoodie with leopard print.</p>
+        <p><strong>Price:</strong> 140 EUR</p>
+        <p><strong>Bank transfer details:</strong><br>
+           IBAN: SK19 0900 0000 0052 2824 7475<br>
+           Bank: Slovenska Sporitelna<br>
+           Account holder: NovaWearStore
+        </p>
+        <form action="mailto:szabokristof79@gmail.com" method="post" enctype="text/plain">
+            Your Name:<br>
+            <input type="text" name="name" required><br>
+            Your Email:<br>
+            <input type="email" name="email" required><br>
+            Product:<br>
+            <input type="text" name="product" value="Supreme White Half-Zip Leopard" readonly><br>
+            Message:<br>
+            <textarea name="message"></textarea><br><br>
+            <input type="submit" value="Send Order">
+        </form>
+    </div>
+
+    <!-- Termék 2 -->
+    <div class="product">
+        <img src="image2.png" alt="Supreme Hooded Zip-Up Leopard SS25">
+        <h3>Supreme Hooded Zip-Up Leopard SS25</h3>
+        <p>A clean and bold half-zip hoodie on a white base.</p>
+        <p><strong>Price:</strong> 180 EUR</p>
+        <p><strong>Bank transfer details:</strong><br>
+           IBAN: SK19 0900 0000 0052 2824 7475<br>
+           Bank: Slovenska Sporitelna<br>
+           Account holder: NovaWearStore
+        </p>
+        <form action="mailto:szabokristof79@gmail.com" method="post" enctype="text/plain">
+            Your Name:<br>
+            <input type="text" name="name" required><br>
+            Your Email:<br>
+            <input type="email" name="email" required><br>
+            Product:<br>
+            <input type="text" name="product" value="Supreme Hooded Zip-Up Leopard SS25" readonly><br>
+            Message:<br>
+            <textarea name="message"></textarea><br><br>
+            <input type="submit" value="Send Order">
+        </form>
+    </div>
+
+</div>
+
+</body>
+</html>
